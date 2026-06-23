@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { getStats, getHistory } from "../services/api";
-import StatsCards from "../components/StatsCards";
-import SensorChart from "../components/SensorChart";
-import Navbar from "../components/Navbar";
+import { getStats, getHistory } from "../services/api.js";
+import StatsCards from "../components/StatsCards.jsx";
+import SensorChart from "../components/SensorChart.jsx";
+import Navbar from "../components/NavBar.jsx";
 
 const Dashboard = () => {
   const [stats, setStats] = useState({});
