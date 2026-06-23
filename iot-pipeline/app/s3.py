@@ -4,7 +4,10 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime
 
-load_dotenv()
+from dotenv import load_dotenv
+import os
+
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
 
 s3 = boto3.client(
     "s3",
@@ -28,5 +31,7 @@ def upload_stats_to_s3(data):
 
         return filename
     except Exception as e:
-        print("S3 Error:", e)
+        import traceback
+        print("S3 ERROR FULL:")
+        traceback.print_exc()
         return None
