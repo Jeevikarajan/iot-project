@@ -17,7 +17,7 @@ const SensorChart = ({ data }) => {
 
   return (
     <div className="chart">
-      <h3>📈 Sensor Data Over Time</h3>
+      <h3>Sensor Data Over Time</h3>
 
       <LineChart width={700} height={300} data={formatted}>
         <CartesianGrid strokeDasharray="3 3" />

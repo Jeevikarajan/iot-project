@@ -2,7 +2,7 @@ import requests
 import random
 import time
 
-URL = "https://iot-project-onab.onrender.com"
+URL = "https://iot-project-onab.onrender.com/sensor-data"
 
 while True:
     data = {
