@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="IoT Sensor Pipeline")
 
-# Create tables
 Base.metadata.create_all(bind=engine)
 
 app.add_middleware(

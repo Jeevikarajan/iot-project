@@ -75,7 +75,6 @@ body {
   background: var(--bg);
 }
 
-/* Headings */
 h1,
 h2 {
   font-family: var(--heading);
