@@ -2,7 +2,7 @@ import requests
 import random
 import time
 
-URL = "http://127.0.0.1:8000/sensor-data"
+URL = "https://iot-project-onab.onrender.com"
 
 while True:
     data = {
@@ -13,5 +13,6 @@ while True:
 
     res = requests.post(URL, json=data)
     print(res.json())
-
+    print("STATUS:", res.status_code)
+    print("RESPONSE:", res.text)
     time.sleep(2)
